@@ -48,7 +48,7 @@ class CleanUpLines(FilterWithDialog):
 			'de': 'Linien aufräumen',
 			'fr': 'Nettoyer les lignes',
 			'es': 'Limpiar líneas',
-			'pt': 'Limpar linhas',
+			'pt': 'Limpar linhas retas',
 			'jp': 'ラインをクリーンアップ',
 			'ko': '라인 정리',
 			'zh': '清理线路',

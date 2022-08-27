@@ -13,15 +13,15 @@
 	<key>CFBundleName</key>
 	<string>CleanUpLines</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>UpdateFeedURL</key>
 	<string>https://raw.githubusercontent.com/mekkablue/CleanUpLines/master/CleanUpLines.glyphsFilter/Contents/Info.plist</string>
 	<key>productPageURL</key>
 	<string>https://github.com/mekkablue/CleanUpLines</string>
 	<key>productReleaseNotes</key>
-	<string>Corrected Portuguese translation (thx Abel + Joana)</string>
+	<string>Fixed crash in Glyphs 3.x</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright, Rainer Erich Scheichelbauer, 2021</string>
 	<key>NSPrincipalClass</key>

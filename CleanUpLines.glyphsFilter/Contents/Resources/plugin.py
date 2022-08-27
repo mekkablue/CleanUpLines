@@ -87,8 +87,11 @@ class CleanUpLines(FilterWithDialog):
 	def setThreshold_( self, sender ):
 		
 		# Store value coming in from dialog
-		Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] = sender.floatValue()
-		
+		if hasattr(sender,"floatValue");
+			Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] = sender.floatValue()
+		elif type(sender)==float:
+			Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] = sender
+			
 		# Trigger redraw
 		self.update()
 

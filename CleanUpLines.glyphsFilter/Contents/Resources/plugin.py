@@ -89,7 +89,7 @@ class CleanUpLines(FilterWithDialog):
 		# Store value coming in from dialog
 		if hasattr(sender,"floatValue"):
 			Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] = sender.floatValue()
-		elif type(sender)==float:
+		elif isinstance(sender, float):
 			Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] = sender
 			
 		# Trigger redraw
@@ -110,7 +110,7 @@ class CleanUpLines(FilterWithDialog):
 		# Delete all nodes that are on an angle smaller than the theshold
 		for i in range(len(layer.shapes))[::-1]:
 			thisShape = layer.shapes[i]
-			if type(thisShape) == GSPath:
+			if isinstance(thisShape, GSPath):
 				nodeCount = len(thisShape.nodes)
 				for j in range(nodeCount)[::-1]:
 					thisNode = thisShape.nodes[j]

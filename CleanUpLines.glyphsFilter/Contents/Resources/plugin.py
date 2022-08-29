@@ -20,7 +20,7 @@ from GlyphsApp import *
 from GlyphsApp.plugins import *
 from math import degrees, atan2
 
-def angle( firstPoint, secondPoint ):
+def angle(firstPoint, secondPoint):
 	"""
 	Returns the angle (in degrees) of the straight line between firstPoint and secondPoint,
 	0 degrees being the second point to the right of first point.
@@ -84,7 +84,7 @@ class CleanUpLines(FilterWithDialog):
 
 	# Action triggered by UI
 	@objc.IBAction
-	def setThreshold_( self, sender ):
+	def setThreshold_(self, sender):
 		
 		# Store value coming in from dialog
 		if hasattr(sender,"floatValue"):
@@ -125,8 +125,8 @@ class CleanUpLines(FilterWithDialog):
 								nodeCount = len(thisShape.nodes)
 
 	@objc.python_method
-	def generateCustomParameter( self ):
-		return "%s; threshold:%s;" % (self.__class__.__name__, Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] )
+	def generateCustomParameter(self):
+		return "%s; threshold:%s;" % (self.__class__.__name__, Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'])
 
 	@objc.python_method
 	def __file__(self):

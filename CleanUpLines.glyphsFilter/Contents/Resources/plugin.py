@@ -80,7 +80,7 @@ class CleanUpLines(FilterWithDialog):
 		self.angleThresholdField.setStringValue_(Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'])
 		
 		# Set focus to text field
-		self.angleThresholdField.becomeFirstResponder()
+		# self.angleThresholdField.becomeFirstResponder()
 
 	# Action triggered by UI
 	@objc.IBAction

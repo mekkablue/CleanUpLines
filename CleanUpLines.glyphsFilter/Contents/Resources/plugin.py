@@ -76,19 +76,13 @@ class CleanUpLines(FilterWithDialog):
 		# Set default value
 		Glyphs.registerDefault('com.mekkablue.CleanUpLines.threshold', 10.0)
 		
-		# Set value of text field
-		self.angleThresholdField.setStringValue_(Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'])
-		
 		# Set focus to text field
-		# self.angleThresholdField.becomeFirstResponder()
+		self.angleThresholdField.becomeFirstResponder()
 
 	# Action triggered by UI
 	@objc.IBAction
 	def setThreshold_(self, sender):
-		print(sender)
-		# Store value coming in from dialog
-		Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'] = sender.floatValue()
-			
+		# binding to userdefaults in .xib
 		# Trigger redraw
 		self.update()
 
@@ -102,7 +96,7 @@ class CleanUpLines(FilterWithDialog):
 		
 		# Called through UI, use stored value
 		else:
-			threshold = float(Glyphs.defaults['com.mekkablue.CleanUpLines.threshold'])
+			threshold = max(1, float(Glyphs.defaults['com.mekkablue.CleanUpLines.threshold']))
 		
 		# Delete all nodes that are on an angle smaller than the theshold
 		for i in range(len(layer.shapes))[::-1]:

@@ -26,7 +26,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfg-c5-0Yw" customClass="NSSearchField">
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfg-c5-0Yw" customClass="GSSteppingTextField">
                     <rect key="frame" x="139" y="19" width="58" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <string key="toolTip">Deletes all (blue) on-curve nodes between two line segments, where the line segments form an angle smaller than the given threshold.</string>
